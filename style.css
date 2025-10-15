@@ -1,19 +1,73 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f7f7f7;
   color: #222;
-  margin: 40px;
+  margin: 0;
+  padding: 40px;
+  line-height: 1.6;
 }
 
 h2 {
-  color: #f92100;
-  border-bottom: 2px solid #ff0000;
-  padding-bottom: 5px;
+  color: #e32211;
+  border-left: 5px solid #ff3b30;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 220px;
+  padding: 8px;
+  margin: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #ff3b30;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d82a1e;
 }
 
 p {
-  background: #fff;
-  padding: 10px 15px;
+  background: #ffffff;
+  padding: 12px 18px;
   border-radius: 6px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+  }
+  
+  form {
+    padding: 15px;
+  }
 }
